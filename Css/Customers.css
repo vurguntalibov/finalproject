@@ -1,0 +1,115 @@
+.Customers{
+    background-color: rgb(224, 224, 233);
+    border-radius: 0.375rem;
+    height: 120wh;
+    margin-bottom: 50px;
+}
+
+.title{
+display: flex;
+justify-content:end;
+border-radius: 0.375rem;
+
+}
+
+.columns{
+ display: flex;
+ justify-content: space-between;
+ width: 15%;
+ height: 6vh;
+ margin: 30px 20px 0 0;
+padding-top:5px;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+border-radius: 0.375rem;
+}
+
+.filter{
+    width: 15%;
+    height: 6vh;
+}
+.tab{
+    margin:20px 10px  0 10px;
+    background-color: aliceblue;
+   
+}
+.t{
+    width: 100%;
+}
+
+.head th{
+    border: 1.5px solid;
+    border-radius: 0.375rem;
+
+}
+table tr{
+    height: 40px;
+}
+table td{
+    border:0.5px solid;
+}
+ table tr:nth-child(even):hover{
+    background-color: rgb(184, 225, 113);
+    border: 1px solid;
+ }
+
+ table tr:nth-child(odd):hover{
+    background-color: rgb(108, 131, 173);
+    border: 1px solid;
+ }
+
+.choose{
+position: absolute;
+z-index: 99;
+background-color: aliceblue;
+margin:99px 260px 0 0;
+box-shadow:0 0 10px 0;
+width: 150px;
+line-height:10px;
+padding-top: 10px;
+}
+.choose p{
+    text-align: start;
+    padding:0 0 0 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px;
+}
+.info{
+    width: 35%;
+    background-color: rgb(242, 231, 231);
+    position: absolute;
+    z-index: 99;
+    left:40%;
+    border-radius: 0.375rem;
+}
+.info label{
+    font-weight: bold;
+    margin: 10px 0 0 0;
+
+}
+
+.save{
+    background-color: rgb(39, 39, 184);
+    border-radius: 0.375rem;
+    width: 60px;
+}
+.exit{
+    background-color:red;
+    border-radius: 0.375rem;
+    width: 60px;
+}
+.paginationbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0 30px 0;
+ 
+}
+.paginationbar button{
+    border-radius: 0.375rem;
+}
+.paginationbar p{
+    margin: 10px;
+    color: blue;
+}

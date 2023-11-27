@@ -1,0 +1,279 @@
+.mode {
+    position: absolute;
+    background-color:rgb(240, 240, 245);
+    padding:30px 10px 20px 20px;
+    height: 100vh;
+    box-shadow: 0 0 20px  0;
+    margin: -70px 0 0 -112px;
+    width: 200px;
+}
+
+
+.theme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.form-control{
+    cursor: pointer;
+    margin-left: 30px;
+    width: 70%;
+
+}
+.circle{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:wheat;
+    color: azure;
+ 
+}
+.circle1{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:rgb(30, 30, 29);
+
+}
+.dark{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.light{
+    background-color:rgb(218, 230, 211);
+    
+}
+/* .dark{
+    transition: .4s ease;
+} */
+
+.light .App,.Main,.Navbar,.Sidebar{
+    background-color:white;
+}
+
+.dark .App{
+    background-color: black;
+    color: white;
+
+}
+.dark .Main{
+    background-color: black;
+    color: white;
+   
+}
+.dark .Navbar{
+    background-color: black;
+    color: white;
+  
+}
+.dark .Sidebar{
+    background-color: black;
+    color: white;
+   
+}
+.dark .Sidebar div{
+    background-color: black;
+    color: white;
+
+}
+.dark .Customers,.dark .tab,.dark .choose,.dark .columns{
+    background-color: black;
+    color: white;
+    transition: .4s ease;
+}
+
+.dark .mode,.dark div{
+    background-color: black;
+    color: white;
+    transition: .4s ease;
+}
+
+.blueb{
+    display: flex;
+    margin: 0 20px 10px 30px;
+     border-radius: 0.375rem;
+     background-color: white;
+     cursor: pointer;
+}
+.blueb p,.redb p,.cyanb p,.greenb p,.orangeb p{
+    margin: 5px 20px 0 10px;
+}
+.redb{
+    display: flex;
+    margin: 10px 20px 10px 30px;
+     background-color: white;
+     border-radius: 0.375rem;
+     cursor: pointer;
+}
+.cyanb{
+    display: flex;
+    margin: 10px 20px 10px 30px;
+    background-color: white;
+     border-radius: 0.375rem;
+     cursor: pointer;
+}
+.greenb{
+    display: flex;
+    margin: 10px 20px 10px 30px;
+    background-color: white;
+     border-radius: 0.375rem;
+     cursor: pointer;
+}
+.orangeb{
+    display: flex;
+    margin: 10px 20px 10px 30px;
+    background-color: white;
+     border-radius: 0.375rem;
+     cursor: pointer;
+}
+
+.blue .blueb  {
+    background-color: blue;
+}
+.blue .form-control{
+    background-color: blue;
+}
+.blue .Sidebar div{
+    color: blue;
+}
+.blue .Nav1 p{
+    color: blue;
+}
+
+.red .redb  {
+    background-color:red;
+}
+.red .form-control{
+    background-color: red;
+}
+.red .Sidebar div{
+    color:red;
+}
+.red .Nav1 p{
+    color:red;
+}
+
+.cyan .cyanb  {
+    background-color:cyan;
+}
+.cyan .form-control{
+    background-color:cyan;
+}
+.cyan .Sidebar div{
+    color:cyan;
+}
+.cyan .Nav1 p{
+    color:cyan;
+}
+
+.green .greenb  {
+    background-color:green;
+}
+.green .form-control{
+    background-color:green;
+}
+.green .Sidebar div{
+    color:green;
+}
+.green .Nav1 p{
+    color:green;
+}
+
+.orange .orangeb  {
+    background-color:orange;
+}
+.orange .form-control{
+    background-color:orange;
+}
+.orange .Sidebar div{
+    color:orange;
+}
+.orange .Nav1 p{
+    color:orange;
+}
+
+/* 
+//  bu da bir variantdir.amma islemedi.yeni localstorageye vermedi//
+
+
+// const[mode,setmode]=useState(localStorage.getItem("list10") || true)   
+
+// const changemode=()=>{
+//  const form = mode=== true  ? document.body.classList.add ("dark") : document.body.classList.remove("dark");
+//   setmode(form);
+//  localStorage.setItem("list10",form )
+// }
+
+
+// useEffect(() => {
+//   document.body.className = `mode${mode}`;
+// }, [mode]);
+
+
+
+
+  //2-ci metod///
+
+//  useEffect(()=>{
+//   mode===true  ? document.body.classList.add ("dark") : document.body.classList.remove("dark");
+//    const form=mode;
+//    localStorage.setItem("list10",(form ));
+  
+//   },[mode])
+
+
+
+
+// useEffect(()=>{
+// const stored=localStorage.getItem("list10");
+//  console.log(stored)
+//  if(stored)
+//  { setmode(true)}
+//  else{
+//    setmode(false)}
+// },[]) ;
+
+
+
+
+       //Hazirki islediyim
+//   const[mode,setmode]=useState(true
+//   const changemode=()=>{
+//    setmode(!mode)
+//  const x= mode===true  ? document.body.classList.add ("dark") : document.body.classList.remove("dark");
+//     localStorage.setItem(("list10"),(x))
+//     console.log(x)
+//   }
+//     useEffect(()=>{
+//   const stored=localStorage.getItem("list10");
+//    console.log(stored)
+//    if(stored)
+//    { setmode(true)}
+//    else{
+//      setmode(false)}
+//   },[]) ;
+
+        
+
+          //  Mezahir's write ///
+//  const[theme,setTheme]=useState(localStorage.getItem("list10") ) 
+//  const changeTHEME=(test)=>{
+//   localStorage.setItem(("list10"),(test))
+//  }
+//  console.log(localStorage.getItem("list10"))
+//  useEffect(()=>{
+//  if(theme){
+//   document.body.classList.add("light")
+//   document.body.classList.remove("dark")
+//   localStorage.setItem(("list10"),(true))
+//  }
+//  else{
+//   document.body.classList.add("dark")
+//   document.body.classList.remove("light")
+//   localStorage.setItem(("list10"),(false))
+//  }
+//  },[theme]) */

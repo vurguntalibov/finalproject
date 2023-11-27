@@ -1,0 +1,122 @@
+.Navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+   .Nav1{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items:center;
+  }
+    .tyson{
+    border-radius: 50%;
+    height: 100%;
+    width: 10%;
+    margin-right: 10px;
+  } 
+  .Nav1 p{
+    cursor: pointer;
+  }
+
+ .Nav2{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-right:10px;
+}
+.Nav2 img{
+   height: 30px;
+   width: 40px;
+   margin:5px;
+   cursor: pointer;
+
+}
+.dropdown1{
+  position:absolute;
+  margin-top: 10px;
+  background-color:rgb(240, 240, 245);
+  text-align: left;
+  box-shadow:0 0 10px 0;
+  cursor: pointer;
+   z-index: 99;
+  
+}
+.dropdown1 img{
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 5px;
+  z-index: 99;
+}
+.dropdown2{
+  position:absolute;
+  margin-top: 10px;
+  background-color:rgb(240, 240, 245);
+  text-align: left;
+  box-shadow:0 0 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -40px;
+   padding:0 5px 0 0;
+   z-index: 99;
+}
+
+.dropdown3{
+  position:absolute;
+  margin-top: 10px;
+  background-color:rgb(240, 240, 245);
+  z-index: 1;
+  text-align: left;
+  box-shadow:0 0 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -220px;
+  margin-right: 100px;
+  z-index: 99;
+}
+.dropdown3 img{
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right:10px;
+  z-index: 99;
+}
+.dropdown3 p{
+  align-items: center;
+  z-index: 99;
+}
+.view{
+  background-color: rgb(107, 107, 224);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: aliceblue;
+  border: none;
+}
+.dark{
+  background-color: aqua;
+  width: 100px;
+  height: 300px;
+}
+@media screen and (max-width:600px){
+  .tyson{
+    border-radius: 50%;
+    height: 100%;
+    width: 30%;
+    margin-right: 10px;
+  } 
+};
+@media screen and (min-width:600px){
+  .tyson{
+    border-radius: 50%;
+    height: 100%;
+    width: 30%;
+    margin-right: 10px;
+  } 
+}

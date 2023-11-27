@@ -1,0 +1,25 @@
+.App{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    text-align: center;
+    height: 100vh;
+    transition: 1s ease ;
+}
+@media screen and (max-width:600px) {
+    .App{
+        display: grid;
+        grid-template-columns:  1fr 5fr;
+        text-align: center;
+        height: 100vh;
+        transition: 1s ease ;
+    }
+};
+@media screen and (min-width:600px) {
+    .App{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        text-align: center;
+        height: 100vh;
+        transition: 1s ease ;
+    }
+}
